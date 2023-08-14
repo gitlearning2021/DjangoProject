@@ -22,5 +22,7 @@ from DemoApplication import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     url('^$',views.hello,name='Hello'),
-    url('^about$',views.about,name='About')
+    url('^about$',views.about,name='About'),
+    url('book/',views.BookApiView.as_view())
 ]
+
